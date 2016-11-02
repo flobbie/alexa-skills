@@ -1,0 +1,24 @@
+{
+  "name": "alexa-skill-random-password-generator",
+  "version": "1.0.0",
+  "description": "Generate a random password with amazon alexa.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "alexa",
+    "amazon",
+    "password",
+    "generator",
+    "fun",
+    "voice",
+    "speech"
+  ],
+  "author": "Fabian Dietenberger",
+  "license": "MIT",
+  "dependencies": {
+    "alexa-sdk": "^1.0.6",
+    "password-generator": "^2.0.2"
+  }
+}
