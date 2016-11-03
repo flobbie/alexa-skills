@@ -54,10 +54,7 @@ var handlers = {
         var passwordLength = 12;
         var password = generatePassword(passwordLength, false);
 
-        var passwordSpeechOutput = "";
-        password.split('').forEach(function(char) {
-            passwordSpeechOutput += char + "<break  time='150ms'/>";
-        });
+        var passwordSpeechOutput = password.replace(/(.{1})/g, '$1<break time="150ms"/>');
         var speechOutput = this.t("GET_PASSWORD_MESSAGE") + passwordSpeechOutput + ".";
         this.emit(':tellWithCard', speechOutput, this.t("SKILL_NAME"), "Test")
     },
